@@ -1,4 +1,4 @@
-# Wall Calendar 📅
+# Wall Calendar 
 
 A polished, interactive React wall calendar component built for the TakeUforward SWE Internship Frontend Challenge.
 
