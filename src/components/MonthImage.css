@@ -1,0 +1,108 @@
+.image-panel {
+  width: 280px;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.4s ease;
+  position: relative;
+  border-right: 1px solid rgba(180,160,130,0.3);
+}
+
+.scene-art {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.scene-art svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-panel-footer {
+  padding: 16px 18px;
+  background: rgba(0,0,0,0.08);
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.month-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.78rem;
+  color: var(--ink);
+  line-height: 1.5;
+  margin-bottom: 12px;
+  opacity: 0.85;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.nav-btn {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid rgba(0,0,0,0.15);
+  color: var(--ink);
+  font-size: 1.4rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, transform 0.15s;
+  line-height: 1;
+  font-weight: 300;
+  flex-shrink: 0;
+}
+.nav-btn:hover {
+  background: rgba(255,255,255,0.8);
+  transform: scale(1.08);
+}
+.nav-btn:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle-btn {
+  flex: 1;
+  background: rgba(255,255,255,0.45);
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 20px;
+  padding: 6px 10px;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.theme-toggle-btn:hover {
+  background: rgba(255,255,255,0.7);
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  .image-panel {
+    width: 100%;
+    min-width: unset;
+    border-right: none;
+    border-bottom: 1px solid rgba(180,160,130,0.3);
+    max-height: 260px;
+  }
+  .scene-art {
+    max-height: 190px;
+  }
+}
